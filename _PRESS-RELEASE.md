@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  $Sudo Future
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  People who want to traverse through my ideas and imagination
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  It is a choose your own path game that tests the user.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  Games nowadays are bland.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  Stimulate the user through an experience that transpires generic games.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "Are you tired of the monotonous games presented nowadays"
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Visit the link, and begin your travels
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "This game changed my life" - Bob 2019
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  What are you waiting for? Enter the game now!
