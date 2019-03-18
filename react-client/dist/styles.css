@@ -1,0 +1,206 @@
+body {
+  font-family: 'Poiret One', cursive;
+}
+
+form {
+  z-index: 12;
+  font-family: 'Roboto Mono', monospace;
+  margin: 12% auto;
+  background-color: gray;
+  border: 3px solid #f1f1f1;
+  width: 350px;
+  height: 150px;
+
+  text-align: center
+}
+
+.containerleft {
+  width:50%;
+}
+
+.containerright{
+  width: 50%;
+}
+
+.decisions {
+  font-family: 'Roboto Mono', monospace;
+  margin-top:30%;
+  margin-left: 25%;
+  font-size: 40px;
+  padding: 32px 32px;
+  background-color: gray;
+}
+
+
+
+.container {
+  display:flex;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  min-height: 98vh;
+  min-width: 100vh;
+  background: url(europeslostf.jpg);
+  background-size: cover;
+}
+
+
+
+.text {
+  position:absolute;
+  z-index: 12;
+  font-family: 'Roboto Mono', monospace;
+ 
+  background-color: gray;
+  border: 3px solid #f1f1f1;
+  width: 97%;
+  height: 150px;
+  padding: 15px;
+  margin-top: 30%;
+  text-align: left;
+}
+
+.textcolor {
+  color: red;
+}
+
+
+.firstPage {
+  
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  
+}
+
+.firstPage img {
+  z-index: -1;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.choiceone{
+  color: white;
+  z-index: 99;
+}
+.button {
+    background: -webkit-linear-gradient(left,  green, cyan); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, green, cyan); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,green, cyan); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,  green, cyan); /* Standard syntax (must be last) */
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+p {
+  
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  animation: type 6s steps(60, end) forwards; 
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 6s, 3, 6 ,9*/
+p:nth-child(2) {
+  animation-delay: 3s;
+}
+p:nth-child(3) {
+  animation-delay: 6s;
+}
+p:nth-child(4) {
+  animation-delay: 9s;
+}
+
+
+span {
+  color: white;
+  animation: blink 1s infinite 8s;
+}
+p a {
+  color: white;
+  text-decoration: none;
+}
+@keyframes type {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    width: 30em;
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+::selection {
+  background: black;
+}
+
+
+
+
+
+/* body {
+  background: radial-gradient(#302b63, #24243e);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+insertCon {
+ 
+  text-align: right;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+
+.container {
+  padding: 16px;
+} */
+
+
+
+
