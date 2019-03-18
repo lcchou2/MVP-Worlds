@@ -6,7 +6,7 @@ class Welcome extends React.Component {
 
     this.state = {
       next: '',
-      display: 'block'
+      display: 'none'
     }
     /* change display back to block later */
   }
@@ -15,7 +15,7 @@ class Welcome extends React.Component {
   
     setTimeout(() => {
       this.setState({ display: 'block' })
-    }, 13000)
+    }, 8000)
 
     
    

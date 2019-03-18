@@ -1,10 +1,11 @@
-body {
+* {
   font-family: 'Poiret One', cursive;
+  font-size: 18px;
 }
 
 form {
   z-index: 12;
-  font-family: 'Roboto Mono', monospace;
+  
   margin: 12% auto;
   background-color: gray;
   border: 3px solid #f1f1f1;
@@ -23,7 +24,7 @@ form {
 }
 
 .decisions {
-  font-family: 'Roboto Mono', monospace;
+ 
   margin-top:30%;
   margin-left: 25%;
   font-size: 40px;
@@ -51,7 +52,7 @@ form {
 .text {
   position:absolute;
   z-index: 12;
-  font-family: 'Roboto Mono', monospace;
+ 
  
   background-color: gray;
   border: 3px solid #f1f1f1;
@@ -113,27 +114,27 @@ button:hover {
 p {
   
   color: white;
-  font-family: 'Roboto Mono', monospace;
+
   font-size: 20px;
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
   opacity: 0;
-  animation: type 6s steps(60, end) forwards; 
+  animation: type 3s steps(60, end) forwards; 
   -webkit-user-select: none;
   user-select: none;
 }
 
 /* 6s, 3, 6 ,9*/
 p:nth-child(2) {
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 p:nth-child(3) {
-  animation-delay: 6s;
+  animation-delay: 2s;
 }
 p:nth-child(4) {
-  animation-delay: 9s;
+  animation-delay: 4s;
 }
 
 

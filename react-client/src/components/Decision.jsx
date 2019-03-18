@@ -12,12 +12,12 @@ class Decision extends React.Component {
       <div className = 'container'>
       
         <div className = 'containerleft'>
-        <button className = 'decisions'>Strive Forward</button>
+        <button onClick = {this.props.clickForm} className = 'decisions'>Strive Forward</button>
         </div>
         
         <div className = 'containerright'>
 
-        <button className = 'decisions'>Turn back</button>
+        <button onClick = {this.props.clickForm2} className = 'decisions'>Turn back</button>
         </div>
         
      
