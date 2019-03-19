@@ -32,6 +32,109 @@ form {
   background-color: gray;
 }
 
+.buttono {
+  background: gray;
+  border-color: red;
+  
+}
+
+.modal {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modalInv {
+  position:absolute;
+  z-index: 11;
+  background-color: gray;
+  border: 3px solid #f1f1f1;
+  width: 40%;
+  height: 300px;
+  padding: 15px;
+  margin-top: 10%;
+  margin-left: 30%;
+  text-align: center;
+  
+}
+.modalNotes {
+  position:absolute;
+  z-index: 12;
+  background-color: gray;
+  border: 3px solid #f1f1f1;
+  width: 40%;
+  height: 200px;
+  padding: 15px;
+  margin-bottom: 10%;
+  margin-left: 100%;
+  text-align: center;
+ 
+}
+
+.book {
+  z-index: 99;
+  width: 100%;
+  margin-left: 40%;
+  margin-top: 18%;
+  
+}
+
+.book img {
+  width: 200px;
+  height:200px;
+  
+}
+
+.notes {
+  text-decoration: none;
+}
+
+
+
+.pathcontainer {
+  display:flex;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  min-height: 98vh;
+  min-width: 100vh;
+  background: url(forest2.jpg);
+  background-size: cover;
+}
+.enccontainer {
+  display:flex;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  min-height: 98vh;
+  min-width: 100vh;
+  background: url(two-people-forest.jpg);
+  background-size: contain;
+}
+
+.cowcontainer {
+  display:flex;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  min-height: 98vh;
+  min-width: 100vh;
+  background: url(cowie.jpg) ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
 
 
 .container {
@@ -47,6 +150,20 @@ form {
   background-size: cover;
 }
 
+
+.containerKey {
+  display:flex;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  min-height: 98vh;
+  min-width: 100vh;
+  background: url(two-people-forest.jpg);
+  background-size: contain;
+}
+
 .containerMike {
   display:flex;
   position:absolute;
@@ -57,6 +174,19 @@ form {
   min-height: 98vh;
   min-width: 100vh;
   background: url(images.jpg);
+  background-size: cover;
+}
+
+.containerSpace {
+  display:flex;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  min-height: 98vh;
+  min-width: 100vh;
+  background: url(room.jpg);
   background-size: cover;
 }
 
@@ -79,14 +209,24 @@ form {
 .text {
   position:absolute;
   z-index: 12;
- 
- 
   background-color: gray;
   border: 3px solid #f1f1f1;
   width: 97%;
   height: 150px;
   padding: 15px;
-  margin-top: 30%;
+  margin-top: 38%;
+  text-align: left;
+}
+
+.biggertext {
+  position:absolute;
+  z-index: 12;
+  background-color: gray;
+  border: 3px solid #f1f1f1;
+  width: 97%;
+  height: 170px;
+  padding: 15px;
+  margin-top: 37%;
   text-align: left;
 }
 
@@ -97,7 +237,7 @@ form {
  
   background-color: gray;
   border: 3px solid #f1f1f1;
-  width: 95.5%;
+  width: 97.2%;
   height: 150px;
   padding: 15px;
 
@@ -106,6 +246,10 @@ form {
 
 .textcolor {
   color: red;
+}
+.textcolor2 {
+  color: cyan;
+  text-decoration: underline;
 }
 
 
@@ -136,16 +280,25 @@ form {
   z-index: 99;
 }
 .button {
-    background: -webkit-linear-gradient(left,  green, cyan); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, green, cyan); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right,green, cyan); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right,  green, cyan); /* Standard syntax (must be last) */
-  color: white;
+  background: gray;
+  color: rgb(36, 65, 196);
   padding: 14px 20px;
   margin: 20px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+}
+.buttoninv {
+  background-color: Transparent;
+  color: rgb(36, 65, 196);
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buttoninv:hover {
+  opacity:0.8;
 }
 
 button:hover {
@@ -154,7 +307,7 @@ button:hover {
 
 p {
   
-  color: white;
+  color: rgb(143, 65, 2);
 
   font-size: 20px;
   margin: 10px 0 0 10px;
@@ -162,7 +315,7 @@ p {
   overflow: hidden;
   width: 0;
   opacity: 0;
-  animation: type 3s steps(60, end) forwards; 
+  animation: type 1s steps(60, end) forwards; 
   -webkit-user-select: none;
   user-select: none;
 }
@@ -175,7 +328,7 @@ p:nth-child(3) {
   animation-delay: 2s;
 }
 p:nth-child(4) {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 

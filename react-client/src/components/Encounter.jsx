@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Path extends React.Component {
+class Encounter extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -43,13 +43,13 @@ class Path extends React.Component {
       displayInv: 'none'
     })
 
-    setTimeout(() => {
-      this.setState({ displaybook: 'block' })
-    }, 2000)
+    // setTimeout(() => {
+    //   this.setState({ displaybook: 'block' })
+    // }, 3000)
 
     setTimeout(() => {
       this.setState({ display: 'block' })
-    }, 4000)
+    }, 5000)
 
     
    
@@ -58,7 +58,7 @@ class Path extends React.Component {
   
   render() {
     return(
-      <div className = 'pathcontainer'>
+      <div className = 'enccontainer'>
       <div onClick = {this.switchBack} className = 'modal'style = {{display:this.state.displayInv}} >
           <div className = 'modalInv' >
             <div  className = 'textcolor2'>Inventory</div><br/>
@@ -91,17 +91,17 @@ class Path extends React.Component {
             
           </div>
       </div>
-      <div className = 'book' style = {{display:this.state.displaybook}}>
+      {/* <div className = 'book' style = {{display:this.state.displaybook}}>
         <img src = 'book.jpg'></img>
-      </div>
-      <div className = 'text'>
+      </div> */}
+      <div className = 'biggertext'>
       <button onClick = {this.switchOn}>Inventory</button><br/>
-      (You come across a worn out book with a lot of coding problems along with a note.)<br />
-      {'                              '}<br/>
-      Me: I'll keep the note I guess<br/>
-      {'                              '}<br/>
-      <div className = 'textcolor2'>*Note added to Inventory* (Click on Inventory to view)</div> 
-   
+      (You see two figures in the distance. They are next to 2 unresponsive bodies. They approach you)<br />
+      Cowie: Don't worry kid, we didn't touch them<br/>
+      Steve: Yeah, not like we physically c-<br/>
+      Cowie: Shut up steve. Anyways, we need your help. We'll debrief you while we walk<br/>
+      (You hear a whisper in a bush behind)<br/>
+      ?Bush?: Run. Now.
       <div className = 'choiceonce'>
       <div  style = {{display:this.state.display}}>
 
@@ -118,4 +118,4 @@ class Path extends React.Component {
   }
 }
 
-export default Path
+export default Encounter

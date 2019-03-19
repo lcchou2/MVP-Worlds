@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Path extends React.Component {
+class Cowie extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -43,13 +43,13 @@ class Path extends React.Component {
       displayInv: 'none'
     })
 
-    setTimeout(() => {
-      this.setState({ displaybook: 'block' })
-    }, 2000)
+    // setTimeout(() => {
+    //   this.setState({ displaybook: 'block' })
+    // }, 3000)
 
     setTimeout(() => {
       this.setState({ display: 'block' })
-    }, 4000)
+    }, 5000)
 
     
    
@@ -58,7 +58,7 @@ class Path extends React.Component {
   
   render() {
     return(
-      <div className = 'pathcontainer'>
+      <div className = 'cowcontainer'>
       <div onClick = {this.switchBack} className = 'modal'style = {{display:this.state.displayInv}} >
           <div className = 'modalInv' >
             <div  className = 'textcolor2'>Inventory</div><br/>
@@ -91,17 +91,17 @@ class Path extends React.Component {
             
           </div>
       </div>
-      <div className = 'book' style = {{display:this.state.displaybook}}>
+      {/* <div className = 'book' style = {{display:this.state.displaybook}}>
         <img src = 'book.jpg'></img>
-      </div>
-      <div className = 'text'>
+      </div> */}
+      <div className = 'biggertext'>
       <button onClick = {this.switchOn}>Inventory</button><br/>
-      (You come across a worn out book with a lot of coding problems along with a note.)<br />
-      {'                              '}<br/>
-      Me: I'll keep the note I guess<br/>
-      {'                              '}<br/>
-      <div className = 'textcolor2'>*Note added to Inventory* (Click on Inventory to view)</div> 
-   
+      Cowie: Much of the humans are infected. We need help ridding of them.<br/>
+      (He hands you a gun and points to a girl in the distance)<br/>
+      Cowie: There's one right there, take care of it.<br/>
+      (An innumerable amount of questions bombard your head when you realize that girl is the same supposedly deceased friend)<br/>
+      (You gather the energy to make a choice)
+
       <div className = 'choiceonce'>
       <div  style = {{display:this.state.display}}>
 
@@ -118,4 +118,4 @@ class Path extends React.Component {
   }
 }
 
-export default Path
+export default Cowie
